@@ -80,6 +80,10 @@ ul {
     list-style-type: none;
 }
 
+li {
+    padding-top: 10px;
+}
+
 .buttons {
     position: fixed;
     bottom: 1vw;
@@ -110,6 +114,7 @@ button {
 
 #pokemon-text {
     vertical-align: middle;
+    font-weight: bold;
 }
 
 .pokemon-container {
@@ -125,4 +130,9 @@ button {
 .meat-text {
     padding: 1vw;
     font-size: 1vmax;
+}
+
+.user-data {
+    float: right;
+    padding: 10px;
 }
