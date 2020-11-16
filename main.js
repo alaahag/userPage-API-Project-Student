@@ -7,8 +7,7 @@ const btnLoadDataClick = function()
 
 const btnDisplayDataClick = function()
 {
-    const render = new Renderer();
-    render.renderData(data);
+    new Renderer().renderData(data);
 };
 
 const btnSaveStorageClick = function()

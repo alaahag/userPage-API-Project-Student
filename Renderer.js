@@ -7,18 +7,19 @@ class Renderer
 
     renderData(data)
     {
-        new RenderUsersData().renderData(data.Users);
-        new RenderQuotesData().renderData(data.Quotes);
-        new RenderBaconsData().renderData(data.Bacons);
-        new RenderPokemonsData().renderData(data.Pokemons);
+        new RenderUsersData(data.users);
+        new RenderQuotesData(data.quotes);
+        new RenderBaconsData(data.bacons);
+        new RenderPokemonsData(data.pokemons);
     }
 }
 
 class RenderUsersData extends Renderer
 {
-    constructor()
+    constructor(data)
     {
         super();
+        this.renderData(data);
     }
 
     renderData(data)
@@ -35,9 +36,10 @@ class RenderUsersData extends Renderer
 
 class RenderQuotesData extends Renderer
 {
-    constructor()
+    constructor(data)
     {
         super();
+        this.renderData(data);
     }
 
     renderData(data)
@@ -50,9 +52,10 @@ class RenderQuotesData extends Renderer
 
 class RenderBaconsData extends Renderer
 {
-    constructor()
+    constructor(data)
     {
         super();
+        this.renderData(data);
     }
 
     renderData(data)
@@ -65,9 +68,10 @@ class RenderBaconsData extends Renderer
 
 class RenderPokemonsData extends Renderer
 {
-    constructor()
+    constructor(data)
     {
         super();
+        this.renderData(data);
     }
 
     renderData(data)

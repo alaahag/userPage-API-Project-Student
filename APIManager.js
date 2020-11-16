@@ -9,10 +9,10 @@ class APIManager
 
     loadData()
     {
-        this.data.Users = new UsersAPI().loadData();
-        this.data.Quotes = new QuotesAPI().loadData();
-        this.data.Bacons = new BaconsAPI().loadData();
-        this.data.Pokemons = new PokemonsAPI().loadData();
+        this.data.users = new UsersAPI().loadData();
+        this.data.quotes = new QuotesAPI().loadData();
+        this.data.bacons = new BaconsAPI().loadData();
+        this.data.pokemons = new PokemonsAPI().loadData();
         return this.data;
     }
 
@@ -32,7 +32,6 @@ class UsersAPI extends APIManager
     constructor()
     {
         super();
-        this.data.users = [];
     }
 
     loadData()
